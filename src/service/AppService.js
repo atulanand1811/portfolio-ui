@@ -1,6 +1,6 @@
 class AppService{
     async getUsers(portfolioId) {
-        const url = `http://localhost:5000/user/${portfolioId}`;
+        const url = `http://ec2-13-235-49-56.ap-south-1.compute.amazonaws.com:5000/user/${portfolioId}`;
         const response = await fetch(url, {
             method: 'GET',
             headers: {
